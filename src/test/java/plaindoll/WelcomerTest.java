@@ -12,6 +12,10 @@ public class WelcomerTest {
 	// https://t.me/notopsofficial
 
 	@Test
+	public void welcomerSaysHelloHunter() {
+		assertThat(welcomer.sayHelloHunter(), containsString("hunter"));
+	}
+	@Test
 	public void welcomerSaysWelcome() {
 		assertThat(welcomer.sayWelcome(), containsString("Welcome"));
 	}
